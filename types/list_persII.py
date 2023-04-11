@@ -237,11 +237,41 @@
 # digits1 = [int(x) for x in digits]
 # print(digits1, type(digits1))
 
-a = "1010"
-b = "1011"
-# print(hex(int(a)))
-res = bin(int(a)) + bin(int(b))
-print(res)
+# a = "1010"
+# b = "1011"
+# # print(hex(int(a)))
+# res = bin(int(a)) + bin(int(b))
+# print(res)
+
+
+# https://leetcode.com/problems/two-sum/
+
+# target = 6
+# nums = [3, 3, 2, 12, 5, 6]
+
+# def twoSum(nums, target):
+
+#     nums_fin = []
+#     nums_answer = [x for x in nums if (target - x) in nums]
+#     if nums_answer[0] == nums_answer[1]:
+#         ind = 0
+#         for i in nums:
+#             if i in nums_answer:
+#                 nums_fin.append(ind)
+#             ind += 1
+#         return nums_fin
+#     else:
+#         nums_answer = [x for x in nums_answer.copy() if target / 2 != x]
+#         ind = 0
+#         for i in nums:
+#             if i in nums_answer:
+#                 nums_fin.append(ind)
+#             ind += 1
+#         return nums_fin
+
+# print(twoSum(nums, target))
+
+
 
 
 
