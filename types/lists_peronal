@@ -1,0 +1,528 @@
+# task 1
+
+# name_of_friends = ['Tima', 'Daut', 'Slava', 'Leha', 'Artem']
+
+# for x in name_of_friends:
+#        print(x)
+
+# task 2
+
+# labels = ['Mazda', 'Mersedes', 'BMW']
+
+# for x in labels:
+#         print(f'I like brand {x}')
+
+# task 3
+
+# name_of_list = ['Helloworld!']
+# new_list = name_of_list[0] 
+# len1 = len(new_list)
+# part_big = int(len(name_of_list[0]) // 2 + 1)
+# # part_small = int(len(name_of_list[0]) // 2)
+# if len1 % 2 != 0:
+#     new_list = list(name_of_list[0][part_big:]) + list(name_of_list[0][:part_big])
+# else:
+#     new_list = list(name_of_list[0][(part_big - 1):]) + list(name_of_list[0][:(part_big - 1)])
+    
+# print(list(new_list))
+
+# task 4
+# list_ = ['world', 'hello'] 
+# new_list = [list_[1], list_[0]]
+# print(new_list)
+
+# task 5
+# suitcase = []
+# suitcase.append('T-short')
+# suitcase.append('Shoes')
+# suitcase.append('Shorts')
+# suitcase.append('Sunglasses')
+# suitcase.append('Powder')
+# suitcase.pop()
+# suitcase.insert(0, 'Bra')
+# print(suitcase)
+
+# task 6
+# nums = [1, 26, 23, 25, 3, 3, 5, 1, 3, 2, 2]
+# res = []
+
+# for x in nums:
+#     if x < 5:
+#         res.append(x)
+
+# print(res)
+
+# task 7
+# sequence = input()
+# list_ = list(sequence.split(','))
+# tuple_ = tuple(sequence.split(','))
+# print(list_)
+# print(tuple_)
+
+# task 8
+# list_ = [1, 26, 23, 25, 3, 3, 5, 1, 3, 2, 2]
+# new_list = []
+
+# for x in list_:
+#     new_list.append(str(x))
+
+# print(new_list)
+
+# task 9
+
+# list_ = [1, 26, 23, 25, 3, 3, 5, 1, 3, 2, 2]
+# new_list = []
+
+# for x in list_:
+#     if x % 2 == 0:
+#         new_list.append('четное')
+#     else:
+#         new_list.append('нечетное')
+
+# print(new_list)
+
+# task 10
+
+# list_ = list(range(20)) 
+# print(list_)
+
+# task 11
+
+# list_ = list(range(0, 101, 2))
+# print(list_)
+
+# task 12
+
+# list1 = [11, 23, 45, 7, 9]
+# list2 = [21, 4, 16, 8, 10]
+
+# list3  = list1 + list2
+
+# sum = 0
+# for i in list3:
+#     sum = sum + i
+
+# print(sum)
+
+# task 13
+
+# nums =  input().split(',')  #'15,364,27,2'
+
+# list_ = []
+# for i in nums:
+#     list_.append(i)
+
+# list_.sort()
+# print(list_)
+
+#task 14
+
+# list_ = [1,1,3] 
+
+# list_check = []
+
+# for i in list_:
+#     if not i in list_check:
+#         list_check.append(i)
+    
+# if len(list_) != len(list_check):
+#     print('yes')
+# else:
+#     print('ERROR')
+
+# task 15
+
+# list_ = []
+
+# for i in range(54, 9185):
+#     if i % 5 == 0:
+#         list_.append(i)
+
+# print(list_)
+
+# task 16
+
+# list_ = [20, 10, 20, 1, 100] 
+
+# list_.sort()
+# min_number = list_[0]
+
+# print(min_number)
+
+# task 17
+
+# tuples = [(), ('ram','15','8'), (), ('laxman', 'sita')]
+# cleared_tuples = []
+# for i in tuples:
+#     if i:
+#         cleared_tuples.append(i)
+
+# print(cleared_tuples)
+
+'''
+tuples = [(), ('ram','15','8'), (), ('laxman', 'sita')]
+cleared_tuples = [i for i in tuples if i]
+print(cleared_tuples)
+'''
+# task 18
+
+# list_ = [] 
+# name1 = input("Введите имя и фамилию: ") 
+# name2 = input("Введите имя и фамилию: ") 
+# name3 = input("Введите имя и фамилию: ") 
+# name4 = input("Введите имя и фамилию: ") 
+# name5 = input("Введите имя и фамилию: ") 
+# list_.append(name1) 
+# list_.append(name2) 
+# list_.append(name3) 
+# list_.append(name4) 
+# list_.append(name5) 
+# target = " " 
+# surnames = [] 
+# for x in list_: 
+#     t = x.find(target) 
+#     v = x.rfind(target)
+#     print(t) 
+#     if x.count(target) > 1: 
+#         surnames.append(x[v+1:]) 
+#     else: 
+#         surnames.append(x[t+1:]) 
+        
+# print(sorted(surnames))
+
+# task 19
+
+# list_ = [8, 6, 8, 10, 8, 20, 10, 8, 8]
+# number = 8
+
+# print(list_.count(number))
+
+# task 20
+
+# list1 = []
+# list_ = [1, 'abcd', 3, '1', 4, 'xyz', 5, 'pqr', 7, 5, 12]
+# for i in list_:
+#     if type(i) == int:
+#         list1.append(i)
+#     elif '0' <= i <= '9':
+#         list1.append(int(i))
+
+# sum = 0
+# for i in list1:
+#     sum = sum + i        
+
+# print(sum)
+
+# task 21
+
+# str_list = ['abc', 'xyz', 'aba', '1221']
+# indexs = []
+
+# for str_i in str_list:
+#    if str_i[0] == str_i[-1]:
+#       indexs.append(str_list.index(str_i))
+  
+# print(indexs)
+
+# task 22
+
+# lists = [[0], [1, 3], [5, 7], [9, 11], [13, 15, 17]]
+# max_ = max([x for x in lists], key=len) 
+# min_ = None 
+# if len(lists) > 1: 
+#     min_ = min([x for x in lists], key=len) 
+# if max_ == min_: 
+#     min_ = None 
+
+# print(f'max_list {max_}') 
+# print(f'min_list {min_}')
+
+
+# task 23
+
+
+# step = 3 
+# list_ = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n'] #14
+# list1 = [list_[i::step] for i in range(len(list_))][:step] 
+
+# print(list1)
+
+# task 24
+# res = []
+# size = 3
+# for i in range(1, size+1):
+#     grid = []
+#     for j in range(1, size+1):
+#         grid.append(j)
+#     res.append(grid)
+
+# print(res)
+
+
+
+# task 25
+
+# list_ = ['sun', 'flowers', 'rumor', 'stranger', 'adventure', 'architect', 'accompany', 'abandon', 'cartoon']
+# user_letter = input()
+
+# proposal = []
+# for letter in list_:
+#     if user_letter == letter[0]:
+#         proposal.append(letter)
+
+# print(proposal)  
+# 
+# 
+# task 26
+
+
+# colors1 = ["red", "orange", "green", "blue", "white"] 
+# colors2 = ["black", "yellow", "green", "blue"] 
+# resc1 = [i for i in colors1 if not i in colors2] 
+# resc2 = [a for a in colors2 if not a in colors1] 
+# print(resc1,resc2)
+
+
+# task 27
+
+# list1 = [1,2,3,4,5]
+# list2 = [5,6,7,8,9]
+
+# flag = False
+# for i in list1:
+#     if i in list2:
+#         flag = True
+
+# if flag == True:
+#     print('True')
+# else:
+#     print('False')
+
+# task 28
+
+# list_ = [4, 6, 4, 3, 3, 8, 4, 3, 4, 3, 8, 8] 
+# repeats = 3 
+# list_repit = []
+
+# for i in list_:
+#     if list_.count(i) >= repeats and not i in list_repit:
+#         list_repit.append(i)
+
+# print(list_repit)
+
+# task 29
+
+# from itertools import permutations 
+# list_ = [1, 2, 3] 
+# comb = permutations(list_) 
+# for i in comb: 
+#     print(i)
+
+
+# task 30
+
+
+
+# task 31
+
+# colors = ["Red", "Green", "Blue", "White", "Black", "Yellow", "Orange"]
+# colors.sort(key=len)
+# colors_reverse = []
+
+# for i in colors:
+#     colors_reverse.append(i[::-1])
+
+# print(colors_reverse)
+
+# task 32
+
+# Решение верное - Мое, но не пускает система - пишет RunTime
+
+# list_ = [1,2,3,4,5,6,7,8,9,0]
+# step = 2
+# element = 'A'
+# list_new = []
+
+# for i in list_:
+#     if step == 0:
+#         list_new.append(element)
+#         list_new.append(i)
+#         step = 2
+#     else:
+#         list_new.append(i)
+#     step -= 1
+
+# if len(list_) % 2 == 0:
+#    list_new.append(element) 
+
+# print(list_new)
+
+# Решение не мое, но изящьное
+
+# list_ = [1,2,3,4,5,6,7,8,9,0] 
+# step = 2 
+# element = 'A' 
+# i = step 
+# while i < len(list_) + 1: 
+#     list_.insert(i, element) 
+#     i += step + 1 
+
+# print(list_)
+
+
+# task 33
+
+# lists = [[1, 2, 3], [4, 5, 6], [10, 11, 12], [7, 8, 9]]
+# lists.sort(key=sum)
+# print(lists[-1])
+
+# task 34
+
+# Это решил Я - пусть длино, но сам!
+'''
+list_ = [10, 20, 30, 20, 20, 30, 40, 50, -20, 60, 60, -20, -20]
+repeated = []
+
+for i in list_.copy():
+    grid = 0
+    for j in list_:
+        if i == j:
+            grid += 1
+    if grid > 1 and not i in repeated:
+        repeated.append(i)
+
+print(repeated) 
+'''
+
+
+'''
+# Это решили другие - элегантно!
+
+list_ = [10, 20, 30, 20, 20, 30, 40, 50, -20, 60, 60, -20, -20] 
+repeated = [] 
+for i in list_: 
+    if list_.count(i) > 1: 
+        repeated.append(i) 
+        
+print(repeated)
+        
+'''
+       
+# task 35
+
+# chars = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+# chars_list = []
+# chars_new = []
+# merge_from = input('Type letter for start: ')
+# merge_to = input('Type letter for end: ')
+# for i in chars:
+#     if chars.index(i) >= chars.index(merge_from) and chars.index(i) <= chars.index(merge_to):
+#         chars_list.append(i)
+#     else:
+#         chars_new.append(i)
+                 
+# str_ = ''.join(chars_list)   
+# chars_new.insert(chars.index(merge_from), str_)
+
+# print(chars_new)
+
+
+
+
+
+
+
+
+
+
+# print(merge_from, merge_to)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# for i in range(1, 10):
+#     for j in range(1, 11):
+#         a = i * j
+#         print(f'{i}x{j}={a}')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# numbers_str = input('Введите цифры через запятую: ').split(', ') # 5, 7, 8, 1, 3, 0, 8
+
+# numbers_int = []
+# for number in numbers_str:
+#     numbers_int.append(int(number))
+
+# print(numbers_int[0],numbers_int[-1])
+# # numbers_int.pop()
+# # numbers_int.append('Makers')
+
+# # или такой вариант
+# numbers_int[-1] = 'Makers'
+
+# print(numbers_int)
+    
+
+# numbers_int = [int(i) for i in numbers_str]
+# print(numbers_int)
+
+
+'''
+List Comprehensions (генераторы списков) в Python!!!!
+
+import random
+a = [random.randint(-10, 10) for i in range(10)]
+print(a)
+b = [abs(elements) for elements in a]
+print(b)
+'''
+
+# from random import sample
+# numbers = sample(range(0, 20), k=10)
+# print(numbers)
+# numbers.sort()
+# print(numbers)
+
+
+# list_length = int(input('Enter list length: '))
+# user_words = []
+# length_word = []
+
+# for i in range(list_length):
+#     user_word = input('Vvedite slovo: ')
+#     user_words.append(user_word)
+#     length_word.append(len(user_word))
+
+# print(user_words)
+# print(length_word) 
+
+
+
