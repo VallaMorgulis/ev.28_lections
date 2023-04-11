@@ -15,7 +15,7 @@
 
 # 4. git remote add <origin><url> '''origin git@github.com:VallaMorgulis/test.git''' - это команда для того, чтобы связать ваш локальный репо с удаленным репо в гитхабе.
 
-# 5. git push <origin><master> '''origin master''' - команд отправки всех ваших изменений на удаленный репо
+# 5. git push <origin><main> '''origin main''' - команд отправки всех ваших изменений на удаленный репо
 
 
 
