@@ -275,19 +275,37 @@
 # https://leetcode.com/problems/longest-substring-without-repeating-characters/
 
 
+# s = 'bababcabcbb'
+# res = 0
+# sub = ''
+# for char in s:
+# 	if char not in sub:
+# 		sub += char
+# 		res = max(res, len(sub))
+# 	else:
+# 		cut = sub.index(char)
+# 		sub = sub[cut+1:] + char
+
+# print(res)
+
+
+https://leetcode.com/problems/longest-palindromic-substring/
+
 s = 'bababcabcbb'
-res = 0
+ind = 0
 sub = ''
 for char in s:
 	if char not in sub:
 		sub += char
+		if 
+
+
 		res = max(res, len(sub))
 	else:
 		cut = sub.index(char)
 		sub = sub[cut+1:] + char
 
 print(res)
-
 
 
 
