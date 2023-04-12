@@ -289,58 +289,6 @@
 # print(res)
 
 
-https://leetcode.com/problems/longest-palindromic-substring/
-
-s = 'bababcabcbb'
-ind = 0
-sub = ''
-for char in s:
-	if char not in sub:
-		sub += char
-		if 
-
-
-		res = max(res, len(sub))
-	else:
-		cut = sub.index(char)
-		sub = sub[cut+1:] + char
-
-print(res)
-
-
-
-
-
-# s = 'pwwkew'
-# i = 0
-# count_sime = 0
-# count_not_sime = 0
-# check_list = []
-# if len(s) == 1:
-#     count = 1
-#     print(count)
-# else:
-#     for letter in s:
-#         if i < len(s)-1:
-#             if letter != s[i + 1]:
-#                 if not letter in check_list :
-#                     check_list.append(letter)
-#                     count_not_sime += 1                  
-#                     print(check_list, count_not_sime)
-#             if letter == s[i + 1]:
-#                 if not letter in check_list:
-#                     check_list.append(letter)
-#                     count_sime += 1
-#                     print(check_list, count_sime)
-#         i += 1
-       
-#     if count_sime >= count_not_sime:
-#         print(count_sime)
-#     else:
-#         print(count_not_sime)
-
-
-
 
 
 
