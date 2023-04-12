@@ -247,29 +247,80 @@
 # https://leetcode.com/problems/two-sum/
 
 # target = 6
-# nums = [3, 3, 2, 12, 5, 6]
+# nums = [3, 4, 2, 12, 5, 6]
 
 # def twoSum(nums, target):
 
-#     nums_fin = []
+#     ind_fin = []
 #     nums_answer = [x for x in nums if (target - x) in nums]
 #     if nums_answer[0] == nums_answer[1]:
 #         ind = 0
 #         for i in nums:
 #             if i in nums_answer:
-#                 nums_fin.append(ind)
+#                 ind_fin.append(ind)
 #             ind += 1
-#         return nums_fin
+#         return ind_fin
 #     else:
 #         nums_answer = [x for x in nums_answer.copy() if target / 2 != x]
 #         ind = 0
 #         for i in nums:
 #             if i in nums_answer:
-#                 nums_fin.append(ind)
+#                 ind_fin.append(ind)
 #             ind += 1
-#         return nums_fin
+#         return ind_fin
 
 # print(twoSum(nums, target))
+
+
+# https://leetcode.com/problems/longest-substring-without-repeating-characters/
+
+
+s = 'bababcabcbb'
+res = 0
+sub = ''
+for char in s:
+	if char not in sub:
+		sub += char
+		res = max(res, len(sub))
+	else:
+		cut = sub.index(char)
+		sub = sub[cut+1:] + char
+
+print(res)
+
+
+
+
+
+
+# s = 'pwwkew'
+# i = 0
+# count_sime = 0
+# count_not_sime = 0
+# check_list = []
+# if len(s) == 1:
+#     count = 1
+#     print(count)
+# else:
+#     for letter in s:
+#         if i < len(s)-1:
+#             if letter != s[i + 1]:
+#                 if not letter in check_list :
+#                     check_list.append(letter)
+#                     count_not_sime += 1                  
+#                     print(check_list, count_not_sime)
+#             if letter == s[i + 1]:
+#                 if not letter in check_list:
+#                     check_list.append(letter)
+#                     count_sime += 1
+#                     print(check_list, count_sime)
+#         i += 1
+       
+#     if count_sime >= count_not_sime:
+#         print(count_sime)
+#     else:
+#         print(count_not_sime)
+
 
 
 
