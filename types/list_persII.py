@@ -209,8 +209,8 @@
 # print(ch1)
 
 
-# l1 = [2,4,3]
-# l2 = [5,6,4]
+# l1 = [0]
+# l2 = [0]
 # ch1 = int(''.join([str(x) for x in l1[::-1]]))
 # ch2 = int(''.join([str(x) for x in l2[::-1]]))
 # ch3 = ch1 + ch2
@@ -288,7 +288,29 @@
 
 # print(res)
 
+# https://leetcode.com/problems/single-number/
 
+# nums = [4,4,1,2,1,2,3]
+# check = []
+# for i in nums:
+#     if not i in check:
+#         check.append(i)
+#     elif i in check:
+#         check.remove(i)
+
+# print(check[0])
+
+
+# https://leetcode.com/problems/median-of-two-sorted-arrays/
+
+nums1 = [1,2]
+nums2 = [3,4]
+nums3 = nums1 + nums2
+print(nums3)
+
+
+res = [x for x in nums3 filter(lambda x: x )]
+print(res)
 
 
 
