@@ -17,7 +17,7 @@
 # print(x())
 
 # x = lambda a, b, c: (a * b) % c
-# print(x(5, 5, 5))
+# print(x(7, 2, 5))
 
 
 
@@ -38,11 +38,11 @@
 #     'ayana': 100_000
 # }
 
-# new_dict = dict(sorted(dict_.items(), key=lambda x: x[1]), reversed=True)
+# new_dict = dict(sorted(dict_.items(), key=lambda x: x[1], reverse=True))
 # print(new_dict)
 
 '''
-map(function, iterable) - применяется к каждому элементу внутри iterble функцию, которую мы ей передаемв functions, закидывая в результат те данные, которые возвращает функция. В результате мы получаем mapoobject(iterator, в котором хранятся все наши данные.
+map(function, iterable) - применяется к каждому элементу внутри iterble функцию, которую мы ей передаем в functions, закидывая в результат те данные, которые возвращает функция. В результате мы получаем mapoobject(iterator), в котором хранятся все наши данные.
 '''
 
 # ls = ['one', 'two', 'three', 'four']
@@ -79,16 +79,17 @@ enumerate(iterable) - пронумеровывает каждый элемент
 # ls1 = [1, 2, 3]
 # ls2 = [100, 200, 300]
 
-# res = dict(zip(ls1, ls2))
+# res = tuple(zip(ls1, ls2))
 # print(res)
 
 # ls1 = [1, 2, 3, 4, 5]
 # ls2 = [100, 200, 300, 400, 500, 600]
-# ls3 = [10, 20, 30]
+# ls3 = [10, 20, 30, 40]
 # res = list(zip(ls1, ls2, ls3))
 # print(res)
 
-# zip жля создания словарей
+# zip для создания словарей
+
 # d_keys = ['hostname', 'location', 'vendor', 'model', 'IP']
 # data = {
 #     'oktbr': ['bishkek_oktbr', 'Gorkaya 212', 'Vefa', 'Cisco', '10.255.0.12'],
@@ -119,7 +120,7 @@ enumerate(iterable) - пронумеровывает каждый элемент
 
 # any(Iterable) - возвращает True, если хотя бы один элементы внутри итеррируемого объекта истина, иначе False
 
-# ls = [1, 3 [1, 2], 0]
+# ls = [1, 3, [1, 2], 0]
 # print(any(ls))
 
 # ignore = ['rm -rf', 'sudo', 'reset', 'poweroff']

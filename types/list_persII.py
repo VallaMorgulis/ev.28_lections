@@ -303,18 +303,26 @@
 
 # https://leetcode.com/problems/median-of-two-sorted-arrays/
 
-nums1 = [1,2]
-nums2 = [3,4]
-nums3 = nums1 + nums2
-print(nums3)
+# nums1 = [1]
+# nums2 = [1]
 
+# def findMedianSortedArrays(nums1: list[int], nums2: list[int]) -> float:
 
-res = [x for x in nums3 filter(lambda x: x )]
-print(res)
+#     nums3 = sorted(nums1 + nums2)
 
+#     if not nums1 and not nums2:   
+#         res = float(0)
+#         return res
+#     elif len(nums3) % 2 != 0:
+#         i = len(nums3) // 2
+#         res = float(nums3[i])
+#         return res
+#     else:
+#         i = len(nums3) // 2
+#         res = float((nums3[i] + nums3[i - 1]) / 2)
+#         return res
 
-
-    
+# print(findMedianSortedArrays(nums1, nums2))
 
 
 
