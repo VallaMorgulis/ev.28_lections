@@ -1,0 +1,1 @@
+{'name': 'John Snow', 'age': 24, 'status': True, 'wife': False, 'children': None}
