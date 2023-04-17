@@ -325,6 +325,79 @@
 # print(findMedianSortedArrays(nums1, nums2))
 
 
+# https://leetcode.com/problems/merge-k-sorted-lists/   ---  Не проходит ответ на сайте, хотя работает
+
+# lists = [[1],[1,3,4],[2,6]]
+# list_ = []
+
+# if lists == []:
+#     print(list_)
+# elif lists == [[]]:
+#     print(lists[0])
+# else:
+#     for i in lists:
+#         if i:
+#             for x in range(0, len(i)):
+#                 list_.append(i[x])
+
+# list_ = sorted(list_)
+# print(list_)
+            
+
+
+# https://leetcode.com/problems/length-of-last-word/  
+# -  РЕШЕНО!!!!
+
+# s = "  Hello World  "
+# b = s.strip().split()
+# len_ = len(b[-1])
+# print(len_)
+
+# https://leetcode.com/problems/remove-duplicates-from-sorted-list/ - Работает, но сайт не принимает.
+
+# head = [1,1,2,3,3]
+# sorted_ = []
+# for i in head:
+#     if not i in sorted_:
+#         sorted_.append(i)
+
+# print(sorted_)
+
+products = [
+  {
+    'title': 'Samsung S10', 
+    'price': 800, 
+    'count': 6, 
+    'category': 'samsung'},
+  {
+    'title': 'iPhone 13 Pro', 
+    'price': 1200, 
+    'count': 9, 
+    'category': 'apple'},
+  {
+    'title': 'Xiaomi Mi 10', 
+    'price': 500, 
+    'count': 2, 
+    'category': 'xiaomi'},
+  {
+    'title': 'Samsung S9', 
+    'price': 600, 
+    'count': 4, 
+    'category': 'samsung'},
+  {
+    'title': 'iPhone 11', 
+    'price': 850, 
+    'count': 1, 
+    'category': 'apple'}
+] 
+
+def func21(products, category):
+    res = [x for x in products if x['category'].lower() == category.lower()]
+    return res
+
+print(func21(products, 'apple'))
+
+
 
 
 
