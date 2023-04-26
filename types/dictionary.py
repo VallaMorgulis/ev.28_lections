@@ -195,10 +195,14 @@ print(product)
 
 
 
+ls = [1,2,3,4,5,6]
+ls1 = ['red', 'blue', 'green', 'black', 'pink', 'white']
 
+a1 = dict(zip(ls, ls1))
+a2 = {'name': 1}
+a3 = {k:k*2 for k in range(1, 11)}
 
-
-
+print(a1, a2, a3)
 
 
 
