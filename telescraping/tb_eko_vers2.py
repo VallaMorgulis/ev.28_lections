@@ -13,7 +13,7 @@ def start(message):
     btn1 = types.KeyboardButton('Начнем')
     markup.add(btn1)
     chat_id = message.chat.id
-    bot.send_message(chat_id, 'Здравствуйте, я Ваш бот помощник с сайта EkoBambuk.ru! Вы можете задать мне вопрос, но в ответах я ограничен - правильно формулируйте вопроса, а лучше просто нажимайте на кнопки', reply_markup=markup)
+    bot.send_message(chat_id, 'Здравствуйте, я Ваш бот помощник с сайта EkoBambuk.ru! Вы можете задать мне вопрос, но в ответах я ограничен - правильно формулируйте вопрос, а лучше просто нажимайте на кнопки', reply_markup=markup)
 
 @bot.message_handler(content_types=['text'])
 def detect_and_handle(message):
@@ -128,11 +128,6 @@ def get_data_catalog(goods):
         res_search.append(data)
     
     return res_search
-
-def no_search_result(message):
-    chat_id = message.chat.id
-    msg = bot.send_message(chat_id, 'Нет такой композиции или исполнителя. Во всяком случае мы не нашли. Уточни запрос. Начнем сначала!')
-    detect_and_handle(message)
 
 bot.polling(none_stop=True, interval=0)
 
