@@ -60,8 +60,18 @@
 #         l += 1
 
 
-# print('Результаты голодных игр:')
-# print(f'Plov {p}\nBesh-Barmak {b}\nKuurdak {k}\nOromo {o}\nLagman {l}')
+# # print('Результаты голодных игр:')
+# # print(f'Plov {p}\nBesh-Barmak {b}\nKuurdak {k}\nOromo {o}\nLagman {l}')
+
+# dict_ = {'Plov': p, 'Besh_barmak': b, 'Kuurdak': k, 'Oromo': o, 'Lagman':l}
+# print(dict_)
+# res = sorted(dict_.items(), key=lambda x: x[1], reverse=True)[0]
+# print(f'Gобедило блюдо {res[0]} и оно набрало: {res[1]} очков!')
+
+# sorted_dict = {k:item for item in sorted(dict_.values(), reverse=True) for k,v in dict_.items() if item == v}
+# print(sorted_dict)
+
+###-----------------------------------
 
 # random.choice(sequence) - случайный элемент непустой последовательности.
 
