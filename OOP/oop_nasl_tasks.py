@@ -363,7 +363,7 @@
 # capitals_error = CustomError('ТОЛЬКО БОЛЬШИЕ БУКВЫ РАЗРЕШЕНЫ В ЭТОМ КОДЕ')
 
 # def check_letters(str_):
-#     if str_ == str_.upper():
+#     if str_ == str_.upper():x``
 #         return f'ВСЕ ОТЛИЧНО! {str_}' 
 #     else: 
 #         raise capitals_error
