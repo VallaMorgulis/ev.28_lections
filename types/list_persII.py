@@ -363,39 +363,39 @@
 
 # print(sorted_)
 
-products = [
-  {
-    'title': 'Samsung S10', 
-    'price': 800, 
-    'count': 6, 
-    'category': 'samsung'},
-  {
-    'title': 'iPhone 13 Pro', 
-    'price': 1200, 
-    'count': 9, 
-    'category': 'apple'},
-  {
-    'title': 'Xiaomi Mi 10', 
-    'price': 500, 
-    'count': 2, 
-    'category': 'xiaomi'},
-  {
-    'title': 'Samsung S9', 
-    'price': 600, 
-    'count': 4, 
-    'category': 'samsung'},
-  {
-    'title': 'iPhone 11', 
-    'price': 850, 
-    'count': 1, 
-    'category': 'apple'}
-] 
+# products = [
+#   {
+#     'title': 'Samsung S10', 
+#     'price': 800, 
+#     'count': 6, 
+#     'category': 'samsung'},
+#   {
+#     'title': 'iPhone 13 Pro', 
+#     'price': 1200, 
+#     'count': 9, 
+#     'category': 'apple'},
+#   {
+#     'title': 'Xiaomi Mi 10', 
+#     'price': 500, 
+#     'count': 2, 
+#     'category': 'xiaomi'},
+#   {
+#     'title': 'Samsung S9', 
+#     'price': 600, 
+#     'count': 4, 
+#     'category': 'samsung'},
+#   {
+#     'title': 'iPhone 11', 
+#     'price': 850, 
+#     'count': 1, 
+#     'category': 'apple'}
+# ] 
 
-def func21(products, category):
-    res = [x for x in products if x['category'].lower() == category.lower()]
-    return res
+# def func21(products, category):
+#     res = [x for x in products if x['category'].lower() == category.lower()]
+#     return res
 
-print(func21(products, 'apple'))
+# print(func21(products, 'apple'))
 
 
 
