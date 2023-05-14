@@ -63,47 +63,48 @@
 
 # task 4
 
+# class Student: 
+#     def __init__(self, name, class_name, ball) -> None: 
+#         self.name = name 
+#         self.class_name = class_name 
+#         self.ball = ball 
+        
+#     def srednee_znach(self): 
+#         srednee = sum(self.ball.values())/len(self.ball) 
+#         return srednee 
+    
+#     def __gt__(self, other): 
+#         return f'> {self.srednee_znach() > other.srednee_znach()}' 
+    
+#     def __lt__(self, other): 
+#         return f'< {self.srednee_znach() < other.srednee_znach()}' 
+    
+#     def __ge__(self,other): 
+#         return f'>= {self.srednee_znach() >= other.srednee_znach()}' 
+    
+#     def __le__(self, other): 
+#         return f'<= {self.srednee_znach() <= other.srednee_znach()}' 
+    
+# obj_student1 = Student('a', 'A', {'math': 100, 'history': 50, 'literature': 88}) 
+# obj_student2 = Student('b', 'Aa', {'math': 100, 'history': 50, 'literature': 88}) 
+# print(obj_student1 > obj_student2) 
+# print(obj_student1 < obj_student2) 
+# print(obj_student1 >= obj_student2) 
+# print(obj_student1 <= obj_student2)
+
+
+
 class Student:
-    def __init__(self, name,  class_name, ball) -> None:
+    def __init__(self, name, class_name, ball) -> None:
         self.name = name
         self.class_name = class_name
-        self.ball = {}
+        self.ball = ball
 
-#     def count_balls(self, other):
-#         a = (sum([x for x in self.ball.values()])) / len(self.ball)
-#         b = (sum([x for x in other.ball.values()])) / len(other.ball)
-
-    def __gt__(self, other) -> bool:
-        a = (sum([x for x in self.ball.values()])) / len(self.ball)
-        b = (sum([x for x in other.ball.values()])) / len(other.ball)
-        return a > b
-    
-#     def __le__(self, other) -> bool:
-#         self.count_ball()
-#         return a <= b
-    
-#     def __lt__(self, other) -> bool:
-#         self.count_ball()
-#         return a < b
-    
-#     def __ge__(self, other) -> bool:
-#         self.count_ball()
-#         return a >= b
-    
-
-obj_student1 = Student('a', 'A', {'math': 100, 'history': 50, 'literature': 88})  
-obj_student2 = Student('b', 'Aa', {'math': 100, 'history': 50, 'literature': 88})  
-print(obj_student1 > obj_student2)  
-# print(obj_studen 1 <= obj_student2)
+    def average_value(self):
+        aver_val = 
 
 
-# a = {'math': 100, 'history': 50, 'literature': 88}
-# b = a['math'] + a['history'] + a['literature']
 
-# b = (sum([x for x in a.values()])) / len(a)
-# print(b)
 
-    
-    
 
 
