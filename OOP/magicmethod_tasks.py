@@ -63,16 +63,16 @@
 
 # task 4
 
-# class Student: 
-#     def __init__(self, name, class_name, ball) -> None: 
-#         self.name = name 
-#         self.class_name = class_name 
-#         self.ball = ball 
-        
-#     def srednee_znach(self): 
-#         srednee = sum(self.ball.values())/len(self.ball) 
-#         return srednee 
-    
+# class Student:
+#     def __init__(self, name, class_name, ball) -> None:
+#         self.name = name
+#         self.class_name = class_name
+#         self.ball = ball
+
+#     def srednee_znach(self):
+#         aver_val = sum(self.ball.values())/len(self.ball)
+#         return aver_val
+
 #     def __gt__(self, other): 
 #         return f'> {self.srednee_znach() > other.srednee_znach()}' 
     
@@ -84,27 +84,63 @@
     
 #     def __le__(self, other): 
 #         return f'<= {self.srednee_znach() <= other.srednee_znach()}' 
-    
-# obj_student1 = Student('a', 'A', {'math': 100, 'history': 50, 'literature': 88}) 
-# obj_student2 = Student('b', 'Aa', {'math': 100, 'history': 50, 'literature': 88}) 
-# print(obj_student1 > obj_student2) 
-# print(obj_student1 < obj_student2) 
-# print(obj_student1 >= obj_student2) 
+
+# obj_student1 = Student('a', 'A', {'math': 100, 'history': 50, 'literature': 88})  
+# obj_student2 = Student('b', 'Aa', {'math': 100, 'history': 50, 'literature': 88})  
+# print(obj_student1 > obj_student2)  
+# print(obj_student1 < obj_student2)  
+# print(obj_student1 >= obj_student2)  
 # print(obj_student1 <= obj_student2)
 
+# task 5
 
+# class Word:
+#     def __init__(self, string) -> None:
+#         self.string = string.strip().replace(' ', '')
 
-class Student:
-    def __init__(self, name, class_name, ball) -> None:
-        self.name = name
-        self.class_name = class_name
-        self.ball = ball
+#     def __gt__(self, other): 
+#         return f'{len(self.string) > len(other.string)}' 
+    
+#     def __lt__(self, other): 
+#         return f'{len(self.string) < len(other.string)}' 
+    
+#     def __ge__(self,other): 
+#         return f'{len(self.string) >= len(other.string)}' 
+    
+#     def __le__(self, other): 
+#         return f'{len(self.string) <= len(other.string)}'
 
-    def average_value(self):
-        aver_val = 
+# word1 = Word('H  e  l  l  o')  
+# word2 = Word('world!')  
+# print(word1 > word2)  
+# print(word1 < word2)  
+# print(word1 >= word2)  
+# print(word1 <= word2) 
 
+# task 6
 
+# class Kopilka: 
+#     def __init__(self): 
+#         self.__total = 0 
+#         self.__coins = [] 
+        
+#     def add_moneta(self,moneta): 
+#         self.__total += moneta 
+#         self.__coins.append(moneta) 
+    
+#     def __len__(self): 
+#         return len(self.__coins) 
+    
+#     def __getitem__(self,index): 
+#         return self.__coins[index] 
+    
+# obj = Kopilka() 
+# obj.add_moneta(25) 
+# obj.add_moneta(30) 
 
+# print(len(obj)) 
+# for i in obj: 
+#     print(i)
 
 
 
