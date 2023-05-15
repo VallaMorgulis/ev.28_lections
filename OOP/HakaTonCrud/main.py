@@ -1,8 +1,8 @@
 from views import *
 import json
 
-class Cars(CreateMixin, ListingMixin, RetrieveMixin, UpdateMixin, DeleteMixin): 
-    list_body_types = ['седан', 'универсал', 'купе', 'хэтчбек', 'минивен', 'внедорожник', 'пикап']
+class Cars(CreateMixin, ListingMixin, RetrieveMixin, UpdateMixin, DeleteMixin, FilterMixin): 
+    ...
 
 
 car = Cars()
@@ -14,8 +14,10 @@ car = Cars()
 # print(car.list())
 # print(car.detail(3))  
 # print(car.patch(3, mark='Volkswagen', model='golf', year=2015, engine_cap=1.6, color='серый', body_type='уничерсал', mileage=100000, price=1500600.00))
-print(car.delete(3))
-# print(car.list())
+# print(car.delete(3))
+# print(car.add_new(mark='Volkswagen', model='golf', year=2015, engine_cap=1.6, color='серый', body_type='уничерсал', mileage=100000, price=1500600.00))
+
+print(car.filter())
 
 
 list_ = ['BMW', '5 серия', 2017, 2.0, 'черный', 'седан', 50000, 4015800.00]
