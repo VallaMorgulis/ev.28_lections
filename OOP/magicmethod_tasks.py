@@ -142,5 +142,23 @@
 # for i in obj: 
 #     print(i)
 
+# task 7
 
+# class Anagram(str):
+
+#     def __init__(self, string) -> None:
+#         self.string = string
+
+#     def __eq__(self, other):
+#         return self.string == other.string[::-1]
+    
+#     def __mul__(self, other):
+#         res = self.string[::-1] * other
+#         return res
+    
+# word1 = Anagram('hello') 
+# word2 = Anagram('olleh') 
+# print(word1 == word2) 
+# print(word1 * 3)
+        
 

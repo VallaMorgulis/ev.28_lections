@@ -52,14 +52,17 @@
 
 # task 5
 
-from bs4 import BeautifulSoup
-import requests
-import lxml
+# from bs4 import BeautifulSoup
+# import requests
+# import lxml
 
-source = requests.get('https://enter.kg/').text 
-my_page = BeautifulSoup(source, 'lxml')
-category_list = my_page.find_all('ul', class_="VMmenu")
+# source = requests.get('https://enter.kg/').text 
+# my_page = BeautifulSoup(source, 'lxml')
+# category_list = my_page.find_all('ul', class_="VMmenu")
 
 
-def getTitle(url):
+# def getTitle(url):
+
+
+
 
