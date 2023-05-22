@@ -69,4 +69,88 @@
 
 # print(k, new_nums)
 
+# task 9
+
+
+
+# def calc_price(filename: str) -> int:
+#     with open(filename, 'r') as file:
+#         data = [x.replace('\n', '').split('   ') for x in file.readlines()]
+#         res = sum([int(listik[1])*int(listik[2]) for listik in data])
+    
+#     return res
+
+# filename = 'prices.txt'
+# print(calc_price(filename))
+
+# task 10
+
+# import csv
+# def read_csv(filename: str) -> dict[str, list[str]]:
+#     with open(filename, 'r') as file:
+#         reader = csv.reader(file)
+#         result = {}
+#         for row in reader:
+#             key = row[0] 
+#             values = row[1:] 
+#             result[key] = values 
+        
+#         return result 
+
+# result = read_csv('data.csv') 
+# print(result)
+
+# task 11
+
+# def filter_text(text_filename: str) -> str: 
+#     with open(text_filename) as f: 
+#         word = (f.read()) 
+#         word1 = word.lower()
+        
+#     with open('forbidden_words.txt') as f: 
+#         forbidden = f.readline().split()
+#         for i in forbidden: 
+#             word1 = word1.replace(i, '*' * len(i))
+#             list_1 = list(word1) 
+#             list_ = list(word) 
+#             for i in range(0, len(word1)): 
+#                 print(list_1[i])
+#                 print(list_[i].swapcase())
+#                 if list_1[i] == list_[i].swapcase(): 
+#                     list_1[i] = list_[i] 
+#             a = ''.join(list_1) 
+#     return a 
+
+# filter_text('bad_text.txt')
+
+# task 12
+
+# def bad_students(filename: str) -> list[str]:
+#     with open(filename) as file:
+#         list_ = file.readlines()
+#         list_last_names = []
+#         for item in list_:
+#             list_i = item.split()
+#             if int(list_i[2]) < 4:
+#                 list_last_names.append(list_i[1])
+
+#     return list_last_names
+
+# filename = 'students.txt'
+# print(bad_students(filename))
+
+# task 13
+
+# def reverse_file_print(filename: str) -> None:
+#     with open(filename) as file:
+#         list_ = file.readlines()
+#         list_ = [x[::-1] for x in list_]
+#         list_rev = '\n'.join(list_)
+#     print(list_rev)
+
+# filename = 'zen_of_python.txt'
+# reverse_file_print(filename)
+
+
+
 

@@ -150,23 +150,23 @@
 # obj.static_method(5)
 # C.static_method(5)
 
-class Cylinder:
-    def __init__(self, radius, height) -> None:
-        self.area = self.get_area(radius, height)
+# class Cylinder:
+#     def __init__(self, radius, height) -> None:
+#         self.area = self.get_area(radius, height)
         
-    @staticmethod
-    def get_area(r, h):
-        from math import pi
-        circle2 = (pi * r ** 2) * 2
-        side = 2 * pi * r * h
-        area = circle2 + side
-        return round(area, 2)
+#     @staticmethod
+#     def get_area(r, h):
+#         from math import pi
+#         circle2 = (pi * r ** 2) * 2
+#         side = 2 * pi * r * h
+#         area = circle2 + side
+#         return round(area, 2)
 
 
-obj = Cylinder(10, 7)
-print(f'Area: {obj.area}')
-print()
-obj1 = Cylinder(3, 12)
-print(f'Area: {obj1.area}')
+# obj = Cylinder(10, 7)
+# print(f'Area: {obj.area}')
+# print()
+# obj1 = Cylinder(3, 12)
+# print(f'Area: {obj1.area}')
 
 

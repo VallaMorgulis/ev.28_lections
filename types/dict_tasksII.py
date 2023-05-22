@@ -199,6 +199,10 @@
 # sorted_dict = {k:item for item in sorted(dict_.values()) for k,v in dict_.items() if item == v}
 # print(sorted_dict)
 
+# dict_ = {1: 2, 3: 4, 4: 3, 2: 1, 0: 0}
+# sorted_dict = dict(sorted(list(dict_.items()), key=lambda x: x[1]))
+# print(sorted_dict)
+
 # task 31
 
 # dict_ = {1: 2, 3: 4, 4: 3, 2: 1, 0: 0}
@@ -209,6 +213,10 @@
 #     return e[1] 
 # dict_ = {1: 2, 3: 4, 4: 3, 2: 1, 0: 0}
 # sorted_dict = dict(sorted(list(dict_.items()), key=myFunc, reverse=True))
+# print(sorted_dict)
+
+# dict_ = {1: 2, 3: 4, 4: 3, 2: 1, 0: 0}
+# sorted_dict = dict(sorted(list(dict_.items()), key=lambda x: x[1], reverse=True))
 # print(sorted_dict)
 
 # task 32
@@ -265,3 +273,10 @@
 
 
 
+dict_ = {1: 2, 3: 4, 4: 3, 2: 1, 0: 0}
+sorted_dict = dict(sorted(list(dict_.items()), key=lambda x: x[1]))
+print(sorted_dict)
+
+
+
+      
