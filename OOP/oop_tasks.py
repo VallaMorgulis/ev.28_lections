@@ -320,19 +320,20 @@
 
 # task 6
 
-# class Salary:
-#     percent = 8
+class Salary:
+    percent = 8
 
-#     def __init__(self, salary, experience) -> None:
-#         self.salary = salary
-#         self.exp = experience
+    def __init__(self, salary, experience) -> None:
+        self.salary = salary
+        self.exp = experience
 
-#     def count_percent(self):
-#         return self.salary * self.exp * (self.percent / 100)
+    def count_percent(self):
+        return self.salary * self.exp * (self.percent / 100)
     
 
-# obj = Salary(10000, 10)
-# print(obj.count_percent()) 
+obj = Salary(10000, 10)
+print(obj.count_percent()) 
+print(Salary.percent)
 
 # task 7
 

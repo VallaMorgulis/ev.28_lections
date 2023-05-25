@@ -173,23 +173,23 @@
 
 #------------------------------
 
-class TriangleChecker:
-    def __init__(self, sides: list[int | float]) -> None:
-        self.sides = sides
+# class TriangleChecker:
+#     def __init__(self, sides: list[int | float]) -> None:
+#         self.sides = sides
 
-    def __str__(self) -> str:
-        if not all(isinstance(x, (int, float)) for x in self.sides):
-            return 'нельзя построить треугольник! инвалид валью!'
-        elif any(x <= 0 for x in self.sides):
-            return 'нельзя построить треугольник! инвалид валью!'
-        self.sides.sort()
-        if self.sides[0] + self.sides[1] <= self.sides[-1]:
-            return 'нельзя построить треугольник! сумма меньше либо равна!'
-        return 'мы можем построить треугольник!'
+#     def __str__(self) -> str:
+#         if not all(isinstance(x, (int, float)) for x in self.sides):
+#             return 'нельзя построить треугольник! инвалид валью!'
+#         elif any(x <= 0 for x in self.sides):
+#             return 'нельзя построить треугольник! инвалид валью!'
+#         self.sides.sort()
+#         if self.sides[0] + self.sides[1] <= self.sides[-1]:
+#             return 'нельзя построить треугольник! сумма меньше либо равна!'
+#         return 'мы можем построить треугольник!'
         
-t1 = TriangleChecker([10, 10, 10])
-print(t1)
-t2 = TriangleChecker([-1, 10, 10])
-print(t2)
-t3 = TriangleChecker([5, 10, 12])
-print(t3)
+# t1 = TriangleChecker([10, 10, 10])
+# print(t1)
+# t2 = TriangleChecker([-1, 10, 10])
+# print(t2)
+# t3 = TriangleChecker([5, 10, 12])
+# print(t3)
