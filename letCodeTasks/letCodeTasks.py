@@ -20,5 +20,66 @@
 # print(matrix[:])
 
 
+# class A:
+
+#     def change(self):
+#         print('Hello')
+
+# class B(A):
+
+#     def change(self):
+#         # A.change(self)
+#         super().change()
+
+# obj = B()
+# obj.change()
 
 
+# class A:
+#     def hello(self):
+#         print('hello world')
+
+# class B:
+#     def hello(self):
+#         print('HELLO WORLD')
+
+# class C(A, B):
+#     pass
+
+# obj = C()
+# obj.hello()
+
+# class A:
+
+#     @staticmethod
+#     def change():
+#         print('Hello')
+
+# # class B(A):
+
+# #     def change(self):
+# #         # A.change(self)
+# #         super().change()
+
+# obj = A()
+# obj.change()
+
+
+class Students:
+
+    @classmethod
+    def do_homework(cls):
+        print('I am doing my homework')
+
+    def get_grade(self, grade):
+        print(f'I got {grade} for my homework')
+
+    @staticmethod
+    def sleep():
+        print('Zzzz')
+
+student = Students()
+student.do_homework()
+Students.sleep()
+Students.get_grade(student, 'B+')
+# Students.get_grade('A+')
