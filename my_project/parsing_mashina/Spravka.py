@@ -4,7 +4,7 @@
 
 # deactivate
 
-# pip install -r requirementes.txt
+# pip install -r requirements.txt
 
 # pip freeze
 
