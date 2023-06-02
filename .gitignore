@@ -10,6 +10,7 @@ __pycache__/
 local_settings.py
 db.sqlite3
 media
+images/
 
 ### Linux ###
 *~
@@ -202,6 +203,7 @@ venv/
 ENV/
 venv
 env
+.env
 
 ORM/venv
 scraping/parsing_kaktus/venv

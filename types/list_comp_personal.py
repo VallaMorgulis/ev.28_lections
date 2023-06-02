@@ -316,11 +316,19 @@ print(dict_)'''
 #     print('Ваш объединенный сет полностью уникальный!')
 
 
-dict_ = {'a': {'d': 3, 'e': 45}, 'b': {'f': 23, 'j': 9}, 'c': {'h': 12, 'i': 89}}
-new_list = [item for v in dict_.values() for item in v.values()]
-print(new_list)
+# dict_ = {'a': {'d': 3, 'e': 45}, 'b': {'f': 23, 'j': 9}, 'c': {'h': 12, 'i': 89}}
+# new_list = [item for v in dict_.values() for item in v.values()]
+# print(new_list)
 
 
+# a = {'a': 1, 'b': 5, 'c': 4, 'd': 3}
+# dict_ = {k:[i for i in range(1, v+1)] for k,v in a.items()}
+# print(dict_)
+
+
+# string_ = 'In 1984 there were 13 instances of a protest with over 1000 people attending'
+# list_ = [x for x in string_.split() if x.isdigit()]
+# print(list_)
 
 
 

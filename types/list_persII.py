@@ -169,6 +169,25 @@
 # print(f'max_list {max_}') 
 # print(f'min_list {min_}')
 
+
+# МОЕ РЕШЕНИЕ
+
+# lists = [[0], [1, 3], [5, 7], [9, 11], [13, 15, 17]]
+# max_ = sorted(lists, key=len)[-1]
+# min_ = sorted(lists, key=len)[0]
+# if lists == [[]]:
+#     print(f'max_list {[]}')
+#     print(f'min_list {None}')
+# elif max_ == min_:
+#     print(f'max_list {max_}')
+#     print(f'min_list {None}')
+# else:
+#     print(f'max_list {max_}')
+#     print(f'min_list {min_}')
+
+
+
+
 # task 23
 
 # step = 3
@@ -242,6 +261,7 @@
 # # print(hex(int(a)))
 # res = bin(int(a)) + bin(int(b))
 # print(res)
+
 
 
 # https://leetcode.com/problems/two-sum/
