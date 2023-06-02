@@ -273,10 +273,26 @@
 
 
 
-dict_ = {1: 2, 3: 4, 4: 3, 2: 1, 0: 0}
-sorted_dict = dict(sorted(list(dict_.items()), key=lambda x: x[1]))
-print(sorted_dict)
+# dict_ = {1: 2, 3: 4, 4: 3, 2: 1, 0: 0}
+# sorted_dict = dict(sorted(list(dict_.items()), key=lambda x: x[1]))
+# print(sorted_dict)
 
+
+# my_dict = {'first': {'a': 1}, 'second': {'b': 2}} 
+# dict_ = {k: x for k,v in my_dict.items() for x in v.values()} 
+# print(dict_)
+
+# list_ = [-4, -3, -2, -1, 0, 1, 2, 3, 4]
+# int_list = [x if x >= 0 else 1 for x in list_]
+# print(int_list)
+
+# list1 = [1, 2, 'hello', 3, 'world', 4, 5, 'book', 'code', 6, 'Makers', 7, 8, 9, 10]
+# list2 = [x for x in list1 if isinstance(x, str)]
+# print(list2)
+
+# list_ = [0, 3, 9, 7, 5, 2, 18, 4]
+# list1 = [x for x in list_ if x > 5]
+# print(list1)
 
 
       
