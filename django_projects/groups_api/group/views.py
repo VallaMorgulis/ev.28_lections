@@ -1,5 +1,5 @@
 from rest_framework import generics
-from .models import Teacher, Student, Group
+from .models import Teacher, Student
 from .serializers import TeacherSerializer, StudentSerializer
 
 
