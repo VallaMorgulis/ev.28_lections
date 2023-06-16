@@ -53,8 +53,5 @@ urlpatterns += static(
 )
 
 # ToDo favorites
-# TODO pagination, filter, search
-# TODO ViewSet
-# TODO documentation
 # TODO deploy +
 # TODO follow +
