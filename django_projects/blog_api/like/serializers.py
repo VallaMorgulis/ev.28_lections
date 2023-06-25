@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Like
+from .models import Like, Favorite
 
 
 class LikeUserSerializer(serializers.ModelSerializer):
@@ -8,7 +8,7 @@ class LikeUserSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Like
-        exclude = ('post', )
+        exclude = ('post',)
 
 
 class LikeSerializer(serializers.ModelSerializer):
@@ -29,4 +29,14 @@ class LikeSerializer(serializers.ModelSerializer):
         return attrs
 
 
+class FavoriteSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Favorite
+        fields = ('id', 'post')
 
+    def to_representation(self, instance):
+        repr = super(FavoriteSerializer, self).to_representation(instance)
+        repr['post_title'] = instance.post.title
+        preview = instance.post.preview
+        repr['post_preview'] = preview.url if preview else None
+        return repr

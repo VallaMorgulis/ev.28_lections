@@ -17,6 +17,7 @@ from main.serializers import TaskSerializer, TaskListSerializer
 # generics
 class TaskListCreateView(generics.ListCreateAPIView):
     queryset = Task.objects.all()
+
     # serializer_class = TaskSerializer
 
     def get_serializer_class(self):
@@ -24,11 +25,10 @@ class TaskListCreateView(generics.ListCreateAPIView):
             return TaskListSerializer
         return TaskSerializer
 
+
 class TaskDetailView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Task.objects.all()
     serializer_class = TaskSerializer
-
-
 
 
 class TaskListCreateApiView(APIView):
@@ -43,6 +43,7 @@ class TaskListCreateApiView(APIView):
         serializer.is_valid(raise_exception=True)
         serializer.save()
         return Response(serializer.data, status=201)
+
 
 class TaskDetailApiView(APIView):
     @staticmethod
@@ -75,7 +76,6 @@ class TaskDetailApiView(APIView):
         queryset = self._get_object(pk)
         queryset.delete()
         return Response('Successfully deleted!', status=204)
-
 
 
 # function based-view

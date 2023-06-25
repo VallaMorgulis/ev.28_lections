@@ -2,6 +2,7 @@ from rest_framework import generics, permissions
 from posts.permissions import IsAuthorOrAdminOrPostOwner
 from .models import Comment
 from . import serializers
+from .serializers import CommentSerializer
 
 
 class CommentCreateView(generics.CreateAPIView):
@@ -20,3 +21,8 @@ class CommentDetailView(generics.RetrieveDestroyAPIView):
         if self.request.method == 'DELETE':
             return [IsAuthorOrAdminOrPostOwner(), ]
         return [permissions.AllowAny(), ]
+
+
+class CommentListView(generics.ListAPIView):
+    queryset = Comment.objects.all()
+    serializer_class = CommentSerializer

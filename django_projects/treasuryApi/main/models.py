@@ -22,10 +22,12 @@ class MethodPayment(models.Model):
 
 class Income(models.Model):
     income_amount = models.DecimalField(max_digits=15, decimal_places=2)
-    pay_from = models.ForeignKey(Partners, on_delete=models.CASCADE, related_name='Partners')
+    pay_from = models.ForeignKey(Partners, on_delete=models.CASCADE,
+                                 related_name='Partners')
     sum_expend_for_delivery = models.DecimalField(max_digits=12, decimal_places=2,
                                                   null=True, blank=True)
-    method_payment = models.ForeignKey(MethodPayment, on_delete=models.CASCADE, null=True,
+    method_payment = models.ForeignKey(MethodPayment, on_delete=models.CASCADE,
+                                       null=True,
                                        related_name='method_payments')
     real_date_payment = models.DateField(blank=True, null=True)
     created_at = models.DateTimeField(auto_now_add=True)

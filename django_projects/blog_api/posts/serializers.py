@@ -20,6 +20,7 @@ class PostListSerializer(serializers.ModelSerializer):
         user = self.context['request'].user
         if user.is_authenticated:
             repr['is_liked'] = user.likes.filter(post=instance).exists()
+            repr['is_favorite'] = user.favorites.filter(post=instance).exists()
         return repr
 
 
@@ -56,6 +57,7 @@ class PostDetailSerializer(serializers.ModelSerializer):
     owner_username = serializers.ReadOnlyField(source='owner.username')
     category_name = serializers.ReadOnlyField(source='category.name')
     images = PostImageSerializer(many=True)
+
     # comments = CommentSerializer(many=True)  # 1 способ  - related name
 
     class Meta:
@@ -71,4 +73,15 @@ class PostDetailSerializer(serializers.ModelSerializer):
         user = self.context['request'].user
         if user.is_authenticated:
             repr['is_liked'] = user.likes.filter(post=instance).exists()
+            repr['is_favorite'] = user.favorites.filter(post=instance).exists()
         return repr
+
+
+class PostListLikesSerializer(serializers.ModelSerializer):
+    owner_username = serializers.ReadOnlyField(source='owner.username')
+    category_name = serializers.ReadOnlyField(source='category.name')
+
+    class Meta:
+        model = Post
+        fields = ('id', 'owner', 'title', 'owner_username', 'category_name',
+                  'category', 'preview')

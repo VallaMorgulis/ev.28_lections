@@ -7,6 +7,7 @@ from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework.filters import SearchFilter
 
 from comment.serializers import CommentSerializer
+from like.models import Favorite
 from like.serializers import LikeUserSerializer
 from .models import Post
 from . import serializers
@@ -62,6 +63,23 @@ class PostViewSet(ModelViewSet):
         likes = post.likes.all()
         serializer = LikeUserSerializer(instance=likes, many=True)
         return Response(serializer.data, status=200)
+
+    @action(['POST', "DELETE"], detail=True)
+    def favorites(self, request, pk):
+        post = self.get_object()  # Post.objects.get(id=pk)
+        user = request.user
+        favorite = user.favorites.filter(post=post)
+
+        if request.method == 'POST':
+            if favorite.exists():
+                return Response({'msg': 'Already in Favorite'}, status=400)
+            Favorite.objects.create(owner=user, post=post)
+            return Response({'msg': 'Added to favorite'}, status=201)
+
+        if favorite.exists():
+            favorite.delete()
+            return Response({'msg': 'Deleted from favorite'}, status=204)
+        return Response({'msg': 'Post Not Found in Favorites'}, status=404)
 
 # class PostListCreateView(generics.ListCreateAPIView):
 #     queryset = Post.objects.all()
