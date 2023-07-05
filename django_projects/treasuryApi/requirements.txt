@@ -1,4 +1,4 @@
-django
+ django
 djangorestframework
 pillow
 psycopg2-binary

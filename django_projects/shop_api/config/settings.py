@@ -47,7 +47,6 @@ INSTALLED_APPS = [
     'django_filters',
     'ckeditor',
 
-
     # myApps
     'account',
     'category',
@@ -165,7 +164,6 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_USER = config('EMAIL_USER')
 EMAIL_HOST_PASSWORD = config('EMAIL_PASSWORD')
 
-
 SIMPLE_JWT = {
     "ACCESS_TOKEN_LIFETIME": timedelta(minutes=300),
     "REFRESH_TOKEN_LIFETIME": timedelta(days=1),
@@ -198,5 +196,19 @@ SIMPLE_JWT = {
     "TOKEN_VERIFY_SERIALIZER": "rest_framework_simplejwt.serializers.TokenVerifySerializer",
     "TOKEN_BLACKLIST_SERIALIZER": "rest_framework_simplejwt.serializers.TokenBlacklistSerializer",
 }
+
+# SWAGGER_SETTINGS = {
+#     'SECURITY_DEFINITIONS': {
+#         'Token': {
+#             'type': 'apiKey',
+#             'name': 'Authorization',
+#             'in': 'header',
+#
+#         },
+#     },
+#     'USE_SESSION_AUTH': False,
+# }
+
+
 
 

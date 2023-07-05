@@ -21,9 +21,10 @@ class MethodPayment(models.Model):
 
 
 class Income(models.Model):
+
     income_amount = models.DecimalField(max_digits=15, decimal_places=2)
     pay_from = models.ForeignKey(Partners, on_delete=models.CASCADE,
-                                 related_name='Partners')
+                                 related_name='partners')
     sum_expend_for_delivery = models.DecimalField(max_digits=12, decimal_places=2,
                                                   null=True, blank=True)
     method_payment = models.ForeignKey(MethodPayment, on_delete=models.CASCADE,
