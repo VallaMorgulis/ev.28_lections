@@ -1,0 +1,30 @@
+[
+    {
+        "id": 2,
+        "title": "Redmi Note 20",
+        "description": "The best flagman",
+        "qty": 5,
+        "price": 500
+    },
+    {
+        "id": 3,
+        "title": "iPhone 14 pro MAX",
+        "description": "The best phone for Apple",
+        "qty": 15,
+        "price": 1000
+    },
+    {
+        "id": 4,
+        "title": "Samsung S22 Ultra",
+        "description": "Flagman of Samsung",
+        "qty": 7,
+        "price": 650
+    },
+    {
+        "id": 5,
+        "title": "iPhone 13 pro MAX",
+        "description": "Flagman of Apple last year",
+        "qty": 5,
+        "price": 750
+    }
+]
