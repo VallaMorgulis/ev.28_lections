@@ -1,30 +1,57 @@
 [
     {
+        "id": 1,
+        "mark": "BMW",
+        "model": "5 серия",
+        "year": 2017,
+        "engine_cap": 2.0,
+        "color": "черный",
+        "body_type": "седан",
+        "mileage": 50000,
+        "price": 4015800.0
+    },
+    {
         "id": 2,
-        "title": "Redmi Note 20",
-        "description": "The best flagman",
-        "qty": 5,
-        "price": 500
+        "mark": "Mersedes",
+        "model": "GLA",
+        "year": 2019,
+        "engine_cap": 2.6,
+        "color": "белый",
+        "body_type": "седан",
+        "mileage": 25000,
+        "price": 5014500.0
     },
     {
         "id": 3,
-        "title": "iPhone 14 pro MAX",
-        "description": "The best phone for Apple",
-        "qty": 15,
-        "price": 1000
+        "mark": "Корыто",
+        "model": "Волшебной серия",
+        "year": 253,
+        "engine_cap": 0.1,
+        "color": "пегий",
+        "body_type": "универсал",
+        "mileage": 50000000,
+        "price": 4.0
     },
     {
         "id": 4,
-        "title": "Samsung S22 Ultra",
-        "description": "Flagman of Samsung",
-        "qty": 7,
-        "price": 650
+        "mark": "Subaru",
+        "model": "forester",
+        "year": 2021,
+        "engine_cap": 2.5,
+        "color": "синий",
+        "body_type": "внедорожник",
+        "mileage": 10000,
+        "price": 3015800.0
     },
     {
         "id": 5,
-        "title": "iPhone 13 pro MAX",
-        "description": "Flagman of Apple last year",
-        "qty": 5,
-        "price": 750
+        "mark": "Toyota",
+        "model": "Camry",
+        "year": 2018,
+        "engine_cap": 2.0,
+        "color": "белый",
+        "body_type": "седан",
+        "mileage": 56000,
+        "price": 2015800.0
     }
 ]

@@ -27,7 +27,7 @@ def get_data(articles):
     res = {}
     for item in articles:
         title = item.find('a', class_='ArticleItem--name').text.strip()
-        image = item.find('img', class_='ArticleItem--image-img').get('src').replace('small', 'big')
+        image = item.find('img', class_='ArticleItem--image-img').replace('small', 'big')
         link = item.find('a', class_='ArticleItem--name').get('href')
         description = get_detail(link)
         data = {'title': title, 'img': image, 'desc':description}
